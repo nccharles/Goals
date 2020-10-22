@@ -3,10 +3,18 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GoalComponent } from './goal/goal.component';
+import { GoalDetailComponent } from './goal-detail/goal-detail.component';
+import { StrikethroughDirective } from './strikethrough.directive';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GoalComponent,
+    GoalDetailComponent,
+    StrikethroughDirective,
+    DateCountPipe,
   ],
   imports: [
     BrowserModule,
