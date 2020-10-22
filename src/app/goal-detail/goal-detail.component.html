@@ -1,3 +1,4 @@
 <p class="bg-primary col-md-3 text-light">
   {{goal.description}}</p>
-<button (click)='goalComplete(true)'>Complete</button>
+  <p>This goal will be complete in {{goal.completeDate|dateCount}} days</p>
+<button (click)='goalComplete(true)' class="btn bg-success">Complete</button>
