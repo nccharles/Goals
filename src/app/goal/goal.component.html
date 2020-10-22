@@ -1,7 +1,5 @@
 <div class="container">
-  <h1>My Goals</h1>
-  <hr>
-
+  <h1 class="text-center text-light bg-success">My Goals</h1>
   <div class="row">
     <div class="col-md-6">
       <div *ngFor='let goal of goals;let i = index'>
@@ -14,6 +12,9 @@
           <app-goal-detail  [goal]='goal' (isComplete) = 'deleteGoal($event,i)'></app-goal-detail>
         </div>
       </div>
+    </div>
+    <div class="col-md-6">
+      <app-goal-form (addGoal)="addNewGoal($event)"></app-goal-form>
     </div>
   </div>
 
